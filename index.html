@@ -4,12 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harshada Patil | QA Portfolio</title>
-<!-- Open Graph Meta Tags for LinkedIn -->
-<meta property="og:title" content="Harshada Patil | QA Portfolio" />
-<meta property="og:description" content="Manual + Automation Testing Projects | Selenium, Appium, Playwright | Resume Included" />
-<meta property="og:image" content="https://harshadaP97.github.io/qa-portfolio/thumbnail.png" />
-<meta property="og:url" content="https://harshadaP97.github.io/qa-portfolio/" />
-<meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Open Graph Meta Tags for LinkedIn -->
+  <meta property="og:title" content="Harshada Patil | QA Portfolio" />
+  <meta property="og:description" content="QA Engineer | Manual & Automation Testing | Selenium | Appium | Playwright | AI-Assisted Testing" />
+  <meta property="og:image" content="https://harshadaP97.github.io/qa-portfolio/thumbnail.png" />
+  <meta property="og:url" content="https://harshadaP97.github.io/qa-portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -18,34 +20,84 @@
       background: #f9f9f9;
       color: #333;
     }
+
     header {
       background: #222;
       color: #fff;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
     }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    header p {
+      margin: 5px 0;
+    }
+
     .container {
       padding: 20px;
       max-width: 900px;
       margin: auto;
     }
+
     .section {
       margin-bottom: 40px;
     }
+
     .project {
       margin-bottom: 20px;
-      padding: 15px;
+      padding: 20px;
       background: #fff;
       border-left: 4px solid #007acc;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
     }
+
+    .project.featured {
+      border-left: 5px solid #6f42c1;
+      box-shadow: 0 2px 10px rgba(111, 66, 193, 0.15);
+    }
+
+    .project.featured h3 {
+      color: #6f42c1;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #6f42c1;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .tech-stack {
+      margin: 10px 0 15px 0;
+    }
+
+    .tech-stack span {
+      display: inline-block;
+      background: #f0e9ff;
+      color: #5a32a3;
+      padding: 5px 9px;
+      margin: 3px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
     a {
       color: #007acc;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .skills span {
       background: #e0e0e0;
       display: inline-block;
@@ -54,32 +106,65 @@
       border-radius: 4px;
       font-size: 14px;
     }
+
     footer {
       background: #222;
       color: #fff;
       text-align: center;
       padding: 15px;
     }
+
     .certifications img {
       height: 50px;
       margin: 10px;
     }
+
+    .highlight {
+      background: #f4f8fb;
+      border-left: 4px solid #007acc;
+      padding: 15px;
+      margin-top: 15px;
+    }
   </style>
 </head>
+
 <body>
+
   <header>
     <h1>Harshada Patil</h1>
     <p>Software Test Engineer at VISA | MSc in Applied Computer Science & AI | ISTQB & AWS Certified</p>
+    <p>Manual Testing | Automation Testing | AI-Assisted Testing</p>
   </header>
 
   <div class="container">
+
     <section class="section">
       <h2>About Me</h2>
-      <p>I’m a QA Engineer with 5 years of experience in both manual and automation testing. I started with strong manual QA-handling SIT, UAT, regression, and exploratory testing across web and mobile platforms, and later expanded into building automation frameworks for better speed and coverage. I'm open to manual, automation, or hybrid QA roles across the UK and available immediately (no sponsorship needed).</p>
+
+      <p>
+        I’m a QA Engineer with 5 years of experience in both manual and automation testing.
+        I started with strong manual QA experience across SIT, UAT, regression, and exploratory
+        testing across web and mobile platforms, and later expanded into building automation
+        frameworks for better speed and coverage.
+      </p>
+
+      <p>
+        I have hands-on experience with Selenium, Appium, Playwright, API testing, SQL,
+        and CI/CD practices. I’m also developing my skills in <strong>AI-assisted test automation</strong>,
+        using AI tools and Playwright MCP to support test creation, locator identification,
+        assertions, and automation development.
+      </p>
+
+      <p>
+        I'm open to manual, automation, or hybrid QA roles across the UK and available immediately
+        (no sponsorship needed).
+      </p>
     </section>
+
 
     <section class="section">
       <h2>Manual QA Highlights</h2>
+
       <ul>
         <li>Performed SIT, UAT, and regression testing for large-scale banking, mobile, and ETL-based data analytics systems</li>
         <li>Tested database operations and ETL data pipelines using SQL to ensure data integrity and accuracy</li>
@@ -91,115 +176,277 @@
       </ul>
     </section>
 
+
     <section class="section">
       <h2>Projects</h2>
 
-      <div class="project">
-        <h3>🔹 Playwright E-Commerce Tests</h3>
-        <p>TypeScript + Playwright based tests for saucedemo.com using JSON-driven data and Page Object Model. Manual validation of user flow was done before automating the key scenarios.</p>
+
+      <!-- FEATURED AI PROJECT -->
+
+      <div class="project featured">
+
+        <span class="badge">⭐ FEATURED PROJECT — AI-ASSISTED TESTING</span>
+
+        <h3>🔹 Playwright AI Test Automation</h3>
+
+        <p>
+          TypeScript-based Playwright automation project using the
+          <strong>Page Object Model (POM)</strong> and
+          <strong>AI-assisted test development with Playwright MCP</strong>.
+        </p>
+
+        <div class="tech-stack">
+          <span>Playwright</span>
+          <span>TypeScript</span>
+          <span>POM</span>
+          <span>Playwright MCP</span>
+          <span>AI-Assisted Testing</span>
+        </div>
+
         <h4>Project Highlights:</h4>
+
+        <ul>
+          <li>Created and enhanced UI automation scenarios using Playwright and TypeScript</li>
+          <li>Added Home Page test scenarios and assertions using AI-assisted development</li>
+          <li>Applied Page Object Model for reusable page objects and maintainable test structure</li>
+          <li>Used Playwright MCP with an AI-enabled development environment to assist with browser interaction, locator identification, test creation, and assertions</li>
+          <li>Automated scenarios covering login, payment, fund transfer, currency exchange, transaction filtering, search, and form submission</li>
+          <li>Used Playwright reporting for test execution and debugging</li>
+        </ul>
+
+        <div class="highlight">
+          <strong>AI-Assisted Testing Approach:</strong>
+          AI tools were used as a development assistant to explore application behaviour,
+          identify locators, create test scenarios, and assist with assertions.
+          Generated automation was reviewed and validated before being incorporated into the framework.
+        </div>
+
+        <p>
+          <a href="https://github.com/harshadaP97/playwright-ai-automation" target="_blank">
+            💻 View Project on GitHub →
+          </a>
+        </p>
+
+      </div>
+
+
+      <!-- PLAYWRIGHT E-COMMERCE -->
+
+      <div class="project">
+
+        <h3>🔹 Playwright E-Commerce Tests</h3>
+
+        <p>
+          TypeScript + Playwright based tests for saucedemo.com using JSON-driven
+          data and Page Object Model. Manual validation of user flow was done before
+          automating the key scenarios.
+        </p>
+
+        <h4>Project Highlights:</h4>
+
         <ul>
           <li>Login, checkout, and sorting tests driven by JSON data</li>
           <li>Structured POM design for better reusability</li>
           <li>HTML reporting via Playwright’s built-in tools</li>
           <li>CI with GitHub Actions</li>
         </ul>
-        <a href="https://github.com/harshadaP97/playwright-ecommerce-tests" target="_blank">View on GitHub</a>
+
+        <a href="https://github.com/harshadaP97/playwright-ecommerce-tests" target="_blank">
+          View on GitHub
+        </a>
+
       </div>
 
+
+      <!-- APPIUM -->
+
       <div class="project">
+
         <h3>🔹 Appium Mobile Automation</h3>
-        <p>Mobile test automation framework using Java, Appium, and data-driven testing with Excel files for Android apps. Test cases for login, cart, and checkout were manually executed and reviewed to ensure flow and stability before automation.</p>
+
+        <p>
+          Mobile test automation framework using Java, Appium, and data-driven
+          testing with Excel files for Android apps. Test cases for login, cart,
+          and checkout were manually executed and reviewed to ensure flow and
+          stability before automation.
+        </p>
+
         <h4>Project Highlights:</h4>
+
         <ul>
           <li>Android test coverage on emulator and real devices</li>
           <li>Excel-driven test inputs and data reusability</li>
           <li>Appium with Java integrated into hybrid framework</li>
           <li>Logs, screenshots, and ExtentReports included</li>
         </ul>
-        <a href="https://github.com/harshadaP97/Appium_MobileAutomationFramework" target="_blank">View on GitHub</a>
+
+        <a href="https://github.com/harshadaP97/Appium_MobileAutomationFramework" target="_blank">
+          View on GitHub
+        </a>
+
       </div>
 
+
+      <!-- SELENIUM -->
+
       <div class="project">
+
         <h3>🔹 Selenium Web Automation</h3>
-        <p>Selenium framework using Java and TestNG for web application testing, with data-driven inputs managed through Excel files. Manual functional testing formed the foundation before automating with page objects and test data.</p>
+
+        <p>
+          Selenium framework using Java and TestNG for web application testing,
+          with data-driven inputs managed through Excel files. Manual functional
+          testing formed the foundation before automating with page objects and test data.
+        </p>
+
         <h4>Project Highlights:</h4>
+
         <ul>
           <li>Hybrid framework using Selenium, TestNG, and Excel</li>
           <li>ExtentReports for structured step-level reporting</li>
           <li>Reusable page objects and test utilities</li>
           <li>Covered both manual test cases and automated scenarios for full coverage</li>
         </ul>
-        <a href="https://github.com/harshadaP97/SeleniumFrameworkBank" target="_blank">View on GitHub</a>
+
+        <a href="https://github.com/harshadaP97/SeleniumFrameworkBank" target="_blank">
+          View on GitHub
+        </a>
+
       </div>
 
-<div class="project">
-  <h3>🔹 API + UI Hybrid Automation</h3>
-  <p>Hybrid automation framework using Selenium and RestAssured in Java for UI and API testing. Focused on login flows and RESTful endpoints using practice sites.</p>
-  <h4>Project Highlights:</h4>
-  <ul>
-    <li>Selenium UI tests using Page Object Model (POM)</li>
-    <li>REST API validations on gorest.co.in using JSON data</li>
-    <li>Data-driven testing with modular utilities</li>
-    <li>Execution reporting via ExtentReports</li>
-  </ul>
-  <a href="https://github.com/harshadaP97/API_UI_Automation_Framework" target="_blank">View on GitHub</a>
-</div>
+
+      <!-- API + UI -->
+
+      <div class="project">
+
+        <h3>🔹 API + UI Hybrid Automation</h3>
+
+        <p>
+          Hybrid automation framework using Selenium and RestAssured in Java
+          for UI and API testing. Focused on login flows and RESTful endpoints
+          using practice sites.
+        </p>
+
+        <h4>Project Highlights:</h4>
+
+        <ul>
+          <li>Selenium UI tests using Page Object Model (POM)</li>
+          <li>REST API validations on gorest.co.in using JSON data</li>
+          <li>Data-driven testing with modular utilities</li>
+          <li>Execution reporting via ExtentReports</li>
+        </ul>
+
+        <a href="https://github.com/harshadaP97/API_UI_Automation_Framework" target="_blank">
+          View on GitHub
+        </a>
+
+      </div>
 
     </section>
 
+
     <section class="section">
+
       <h2>Skills & Tools</h2>
+
       <div class="skills">
+
         <span>Manual Testing</span>
         <span>Test Case Design</span>
         <span>Exploratory Testing</span>
         <span>SIT/UAT</span>
         <span>Jira</span>
         <span>BDD</span>
+
         <span>Selenium</span>
         <span>Playwright</span>
         <span>Appium</span>
+
         <span>Java</span>
         <span>TypeScript</span>
         <span>JavaScript</span>
+
         <span>TestNG</span>
         <span>Postman</span>
         <span>JMeter</span>
         <span>SQL</span>
+
         <span>Jenkins</span>
         <span>Git</span>
         <span>Agile</span>
         <span>CI/CD</span>
+
+        <span>Playwright MCP</span>
+        <span>AI-Assisted Testing</span>
+
         <span>ISTQB Certified</span>
         <span>AWS Certified</span>
+
       </div>
+
     </section>
 
+
     <section class="section">
+
       <h2>Certifications & Badges</h2>
+
       <div class="certifications">
-        <img src="https://img.shields.io/badge/ISTQB-Certified-blue" alt="ISTQB Certified" />
-        <img src="https://img.shields.io/badge/AWS-Certified-orange" alt="AWS Certified" />
-        <img src="https://img.shields.io/badge/MSc-Applied_Computer_Science_&_AI-brightgreen" alt="MSc AI" />
+
+        <img
+          src="https://img.shields.io/badge/ISTQB-Certified-blue"
+          alt="ISTQB Certified"
+        />
+
+        <img
+          src="https://img.shields.io/badge/AWS-Certified-orange"
+          alt="AWS Certified"
+        />
+
+        <img
+          src="https://img.shields.io/badge/MSc-Applied_Computer_Science_&_AI-brightgreen"
+          alt="MSc AI"
+        />
+
       </div>
+
     </section>
+
 
     <section class="section">
+
       <h2>Resume & Contact</h2>
-      <p><a href="https://www.linkedin.com/in/harshadapatil97" target="_blank">🔗 Connect on LinkedIn</a></p>
-      <p><a href="https://github.com/harshadaP97" target="_blank">💻 Visit GitHub</a></p>
-      <p style="font-size: 14px; color: #555;">Happy to share a role-specific CV on request.</p>
+
+      <p>
+        <a href="https://www.linkedin.com/in/harshadapatil97" target="_blank">
+          🔗 Connect on LinkedIn
+        </a>
+      </p>
+
+      <p>
+        <a href="https://github.com/harshadaP97" target="_blank">
+          💻 Visit GitHub
+        </a>
+      </p>
+
+      <p style="font-size: 14px; color: #555;">
+        Happy to share a role-specific CV on request.
+      </p>
 
     </section>
+
   </div>
 
+
   <footer>
-  <p>© 2025 Harshada Patil. All rights reserved.</p>
-  <p style="font-size: 13px; color: #777;">
-    This portfolio is my original work. Please do not copy or reuse without permission.
-  </p>
-</footer>
+
+    <p>© 2025 Harshada Patil. All rights reserved.</p>
+
+    <p style="font-size: 13px; color: #777;">
+      This portfolio is my original work. Please do not copy or reuse without permission.
+    </p>
+
+  </footer>
 
 </body>
 </html>
